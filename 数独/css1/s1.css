@@ -1,0 +1,19 @@
+p {
+  color: #fec;
+  font-size: 60px;
+  border: 1px solid red;
+}
+p {
+  width: 60px;
+}
+p > div {
+  height: 90px;
+}
+p div,
+p > div {
+  color: red;
+}
+p > p {
+  backface-visibility: hidden;
+}
+/*# sourceMappingURL=s1.css.map */

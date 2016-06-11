@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="icon" href="img/1.icon.png"/>
+		<style type="text/css">
+			input{
+				width: 100%;
+				height: 119%;
+				outline: none;
+				font-size: 20px;
+				text-align: center;
+			}
+			.high{
+				color: #00f;
+			}
+			#shudu td,#shudu1 td{
+				width: 30px;
+			}
+			#main,#shudu1{
+				position: absolute;
+				top: 100px;
+				left: 504px;
+			}
+			#shudu1{display: none;}
+			#shudu>thead:nth-child(2),#shudu>thead:nth-child(2){
+				background: #000;
+			}
+			#shudu{
+				/*display: inline;*/
+			}
+			div.console{
+				box-sizing: border-box;
+				margin-left: 230px;
+				margin-top: 44px;
+				padding-left: 50px;
+				background-color: #fec;
+				width: 254px;
+				height: 500px;
+			}
+			div.btnConsole{
+				position: relative;
+				top: -200px;
+				left: 310px;
+				display: inline;
+			}
+			div.btnConsole>button{
+				width: 50px;
+			}
+			.color{
+				background: #fcd;
+			}
+			.err{
+				background-image: url(img/error.png);
+			}
+			#time>span{
+				background-color: #fac;
+			}
+			button{
+				color: #000;
+				padding: 10px;
+				background-color: #fff;
+				border: 1px solid #aaa;
+				margin: 5px;
+				width: 100px;
+			}
+			button:hover{
+				background-color: blue;
+				color: #fff;
+			}
+			.loadTable{
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="console">
+			<button class="loadTable" type="button" onclick="window.location.reload()">再来一局</button><br>
+			<button class="loading" type="button" onclick="loading()">重新开始</button>
+			<button class="check" type="button" onclick="checkSucess()">检查是否完成</button>
+			<button class="check" type="button" onclick="clearError()">清除错误提示</button>
+			<div id="time">
+				开始时间<br/>
+				<span></span><br/>
+				消耗时间<br/>
+				<span></span>
+			</div>
+		</div>
+		<section id="main">
+			<div class="btnConsole">
+					
+			</div>
+			
+		</section>
+		<!--<table id="shudu1" border="0" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<td><input type="text" class="txt txt11" value="0" /></td>
+					<td><input type="text" class="txt txt12" value="0" /></td>
+					<td><input type="text" class="txt txt13" value="0" /></td>
+					<td><input type="text" class="txt txt14" value="0" /></td>
+					<td><input type="text" class="txt txt15" value="0" /></td>
+					<td><input type="text" class="txt txt16" value="0" /></td>
+					<td><input type="text" class="txt txt17" value="0" /></td>
+					<td><input type="text" class="txt txt18" value="0" /></td>
+					<td><input type="text" class="txt txt19" value="0" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="txt txt11" value="0" /></td>
+					<td><input type="text" class="txt txt12" value="0" /></td>
+					<td><input type="text" class="txt txt13" value="0" /></td>
+					<td><input type="text" class="txt txt14" value="0" /></td>
+					<td><input type="text" class="txt txt15" value="0" /></td>
+					<td><input type="text" class="txt txt16" value="0" /></td>
+					<td><input type="text" class="txt txt17" value="0" /></td>
+					<td><input type="text" class="txt txt18" value="0" /></td>
+					<td><input type="text" class="txt txt19" value="0" /></td>
+				</tr>
+				<tr>
+					<td><input type="text" class="txt txt11" value="0" /></td>
+					<td><input type="text" class="txt txt12" value="0" /></td>
+					<td><input type="text" class="txt txt13" value="0" /></td>
+					<td><input type="text" class="txt txt14" value="0" /></td>
+					<td><input type="text" class="txt txt15" value="0" /></td>
+					<td><input type="text" class="txt txt16" value="0" /></td>
+					<td><input type="text" class="txt txt17" value="0" /></td>
+					<td><input type="text" class="txt txt18" value="0" /></td>
+					<td><input type="text" class="txt txt19" value="0" /></td>
+				</tr>
+			</thead>
+		</table>-->
+			
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/sd.js"></script>
+	</body>
+</html>
